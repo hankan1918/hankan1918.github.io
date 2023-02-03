@@ -1,0 +1,111 @@
+
+.hidden{
+    display: none;
+}
+#clock{
+    color: white;
+    grid-area: clock;
+    align-self: end;
+    letter-spacing: 0.3cm;
+    font-family: 'Anton';
+    font-size: 1000%;
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+}
+#logOut{
+    margin-top: 5px;
+    margin-right: 5px;
+    grid-area: clock;
+    justify-self: end;
+    align-self: start;
+}
+#loginForm{
+    position: static;
+    grid-area: greeting;
+    align-self: center;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#loginForm>input:first-child{
+    flex:auto;
+    outline-style: none;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+    padding: 10px;
+    font-family: inherit;
+    font-size: 300%;
+    text-align: center;
+}
+#loginForm>input:first-child::placeholder{
+    color: white;
+    align-self: center;
+    text-align: center;
+}
+#loginForm>input:last-child{
+    grid-area: inherit;
+    border: none;
+    font-family:inherit;
+    font-size: 300%;
+    background: none;
+    color:rgb(255, 255, 255)
+}
+#greeting{
+    position: relative;
+    align-self: center;
+    color: white;
+    grid-area: greeting;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 500%;
+    font-weight: 700;
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+}
+#todoForm{
+    grid-area: todo;
+}
+#todoForm input{
+    width: 70%;
+    height: auto;
+    outline-style: none;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+}
+#todoForm input::placeholder{
+    color: white;
+    align-self: center;
+    text-align: center;
+}
+#todoList{
+    grid-area: todo;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+
+}
+#quote{
+    color: white;
+    grid-area: quote;
+    align-self: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0 12px rgb(0, 0, 0);
+}
+.bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+    z-index: -1;
+}
+  
