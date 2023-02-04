@@ -1,71 +1,92 @@
-
 .hidden{
     display: none;
 }
 #clock{
+    /* display: flex;
+    justify-content: center; */
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     color: white;
-    grid-area: clock;
-    align-self: end;
     letter-spacing: 0.3cm;
     font-family: 'Anton';
-    font-size: 1000%;
+    font-size: 1500%;
     text-shadow: 0px 0px 12px rgb(0, 0, 0);
 }
-#logOut{
-    margin-top: 5px;
-    margin-right: 5px;
-    grid-area: clock;
-    justify-self: end;
-    align-self: start;
-}
 #loginForm{
-    position: static;
-    grid-area: greeting;
-    align-self: center;
-    font-family: 'Nanum Myeongjo', serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-#loginForm>input:first-child{
-    flex:auto;
+#loginForm:first-child{
+    width: 40%;
+}
+#loginForm input{
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+
+
+    height: auto;
     outline-style: none;
     background: none;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 2px solid rgb(255, 255, 255);
+}
+#loginForm input::placeholder{
     color: white;
+    font-family: 'Roboto Condensed';
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
     text-shadow: 0px 0px 12px rgb(0, 0, 0);
-    padding: 10px;
-    font-family: inherit;
-    font-size: 300%;
-    text-align: center;
-}
-#loginForm>input:first-child::placeholder{
-    color: white;
-    align-self: center;
-    text-align: center;
-}
-#loginForm>input:last-child{
-    grid-area: inherit;
-    border: none;
-    font-family:inherit;
-    font-size: 300%;
-    background: none;
-    color:rgb(255, 255, 255)
 }
 #greeting{
-    position: relative;
-    align-self: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    grid-area: greeting;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Roboto Condensed';
     font-size: 500%;
-    font-weight: 700;
+    font-weight: bold;
+    text-align: center;
     text-shadow: 0px 0px 12px rgb(0, 0, 0);
 }
+#todoList{
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-size: small;
+    font-weight: bold;
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
 #todoForm{
-    grid-area: todo;
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    transform: translate(-50%, -50%);
 }
 #todoForm input{
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+
     width: 70%;
     height: auto;
     outline-style: none;
@@ -74,28 +95,38 @@
     border-left: none;
     border-right: none;
     border-bottom: 2px solid rgb(255, 255, 255);
-    color: white;
-    text-align: center;
 }
 #todoForm input::placeholder{
     color: white;
-    align-self: center;
+    font-family: 'Roboto Condensed';
+    font-size: large;
+    font-weight: bold;
     text-align: center;
-}
-#todoList{
-    grid-area: todo;
-    font-family: 'Nanum Myeongjo', serif;
-    text-align: center;
-
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
 }
 #quote{
     color: white;
-    grid-area: quote;
-    align-self: center;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Roboto Condensed';
     font-weight: bold;
     text-align: center;
-    text-shadow: 0px 0 12px rgb(0, 0, 0);
+    text-shadow: 0px 0px 12px rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 3%;
+    
+}
+#quote:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+#quote:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
 }
 .bg{
     position: absolute;
